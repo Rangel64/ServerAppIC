@@ -13,12 +13,7 @@ class EstimadorDeIndicesInfraRed:
         return gli, savi, mpri
     
     
-    def calculoIndicesRNA(self,imageUrl):
-        
-        
-        
-        image = cv2.imread(imageUrl)
-        
+    def calculoIndicesRNA(self,image):
         
         (imageBlue,imageGreen,imageRed) = cv2.split(image) 
         
