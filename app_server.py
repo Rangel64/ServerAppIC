@@ -10,9 +10,9 @@ app = Flask(__name__)
 
 
 def index():
-    global reponse
+        global reponse
     
-    if(request.method == 'POST'):
+    #if(request.method == 'POST'):
         request_data = request.data
         request_data = json.loads(request_data.decode('utf-8'))
         decodeString = request_data['image']
@@ -22,4 +22,3 @@ def index():
         
 if(__name__ == "__main__"):
     app.run(host = 'localhost',debug=True)
-    
