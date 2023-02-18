@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import scipy.fftpack as fp
-import keras
+from tensorflow import keras
 import pandas as pd
 from GeradorDeIndices import EstimadorDeIndicesInfraRed as IF
 
