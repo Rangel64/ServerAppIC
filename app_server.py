@@ -19,7 +19,9 @@ def index():
         imageBytes = base64.b64decode((decodeString))
         numeroDeAnimais = Estimador.result(imageBytes)
         return jsonify({'response': str(numeroDeAnimais)})
+    else:
+        return "<h1>Hello World</h1>"
         
 if(__name__ == "__main__"):
-    app.run(host = '192.168.100.218',debug=True)
+    app.run(host = 'localhost',debug=True)
     
